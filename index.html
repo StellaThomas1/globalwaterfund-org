@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Global Water Fund | Strategic Intelligence for Water Security</title>
-  <meta name="description" content="Global Water Fund Institute — strategic intelligence, diplomacy, and finance pathways for water security as human and national security." />
+  <title>Global Water Fund Institute | Water Security Strategic Intelligence</title>
+  <meta name="description" content="Global Water Fund Institute: strategic intelligence, convening, and publications on water security as human and national security." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,22 +13,21 @@
 
   <style>
     :root{
-      --bg:#06080D;
-      --bg2:#0B1324;
+      --bg:#05060A;
+      --ink:#F4F7FF;
+      --muted: rgba(244,247,255,.74);
+      --muted2: rgba(244,247,255,.58);
+      --line: rgba(244,247,255,.12);
       --card: rgba(255,255,255,.04);
-      --line: rgba(255,255,255,.10);
-      --text:#F2F6FF;
-      --muted: rgba(242,246,255,.72);
-      --muted2: rgba(242,246,255,.55);
+      --shadow: 0 26px 80px rgba(0,0,0,.55);
 
-      --a1:#76E6FF;
-      --a2:#85FFB8;
-      --a3:#B8A2FF;
+      --a1:#7BE9FF;
+      --a2:#86FFBC;
+      --a3:#BCA8FF;
 
-      --shadow: 0 24px 70px rgba(0,0,0,.50);
-      --r1:18px;
-      --r2:28px;
-      --max: 1160px;
+      --r1:16px;
+      --r2:26px;
+      --max: 1180px;
 
       --font1:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       --font2:"Fraunces", ui-serif, Georgia, serif;
@@ -38,81 +37,76 @@
     html{ scroll-behavior:smooth; }
     body{
       margin:0;
-      color:var(--text);
+      color:var(--ink);
       font-family:var(--font1);
+      line-height:1.6;
       background:
-        radial-gradient(900px 520px at 18% 10%, rgba(118,230,255,.13), transparent 60%),
-        radial-gradient(820px 520px at 86% 22%, rgba(133,255,184,.11), transparent 55%),
-        radial-gradient(920px 620px at 55% 92%, rgba(184,162,255,.12), transparent 58%),
-        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 60%, #05060A 100%);
-      line-height:1.55;
+        radial-gradient(900px 560px at 16% 8%, rgba(123,233,255,.14), transparent 60%),
+        radial-gradient(820px 560px at 86% 18%, rgba(134,255,188,.11), transparent 58%),
+        radial-gradient(980px 700px at 56% 92%, rgba(188,168,255,.12), transparent 62%),
+        linear-gradient(180deg, var(--bg) 0%, #070A12 55%, #05060A 100%);
     }
 
     a{ color:inherit; text-decoration:none; }
-    .wrap{ max-width:var(--max); margin:0 auto; padding:0 20px; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:0 22px; }
 
-    /* Top nav */
+    /* ---------- NAV ---------- */
     header{
-      position:sticky; top:0; z-index:50;
+      position:sticky; top:0; z-index:60;
       backdrop-filter: blur(16px);
-      background: rgba(6,8,13,.60);
-      border-bottom: 1px solid var(--line);
+      background: rgba(5,6,10,.62);
+      border-bottom:1px solid var(--line);
     }
     .nav{
       display:flex; align-items:center; justify-content:space-between;
       gap:16px; padding:14px 0;
     }
     .brand{
-      display:flex; align-items:center; gap:10px;
-      min-width: 260px;
+      display:flex; align-items:center; gap:12px; min-width: 280px;
     }
     .mark{
-      width:34px; height:34px; border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.18);
+      width:36px; height:36px; border-radius: 14px;
+      border: 1px solid rgba(244,247,255,.18);
       background:
-        radial-gradient(circle at 28% 18%, var(--a1), rgba(118,230,255,.18) 46%, transparent 70%),
-        radial-gradient(circle at 74% 82%, var(--a2), rgba(133,255,184,.16) 45%, transparent 70%),
-        radial-gradient(circle at 74% 20%, var(--a3), rgba(184,162,255,.14) 45%, transparent 70%),
+        radial-gradient(circle at 28% 18%, var(--a1), rgba(123,233,255,.18) 46%, transparent 70%),
+        radial-gradient(circle at 74% 82%, var(--a2), rgba(134,255,188,.16) 45%, transparent 70%),
+        radial-gradient(circle at 74% 18%, var(--a3), rgba(188,168,255,.15) 45%, transparent 70%),
         rgba(255,255,255,.02);
-      box-shadow: 0 14px 30px rgba(0,0,0,.35);
+      box-shadow: 0 14px 28px rgba(0,0,0,.34);
     }
-    .bt{ display:flex; flex-direction:column; line-height:1.05; }
-    .bt b{ font-family:var(--font2); font-weight:650; letter-spacing:.2px; font-size:16px; }
-    .bt span{ color:var(--muted2); font-size:12px; letter-spacing:.2px; }
+    .bt{ display:flex; flex-direction:column; line-height:1.06; }
+    .bt b{ font-family:var(--font2); font-weight:700; letter-spacing:.2px; font-size:16px; }
+    .bt span{ color:var(--muted2); font-size:12px; letter-spacing:.16em; text-transform:uppercase; }
 
-    nav{
-      display:flex; gap:14px; flex-wrap:wrap;
-      justify-content:flex-end; align-items:center;
-    }
+    nav{ display:flex; gap: 14px; flex-wrap:wrap; justify-content:flex-end; align-items:center; }
     nav a{
-      font-size:13px;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius: 12px;
-      border: 1px solid transparent;
+      font-size:13px; color:var(--muted);
+      padding:8px 10px; border-radius:12px;
+      border:1px solid transparent;
     }
     nav a:hover{
-      color:var(--text);
-      border-color: rgba(255,255,255,.14);
+      color:var(--ink);
+      border-color: rgba(244,247,255,.14);
       background: rgba(255,255,255,.03);
     }
-
     .cta{
       display:inline-flex; align-items:center; gap:10px;
-      padding:10px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(118,230,255,.35);
-      background: linear-gradient(180deg, rgba(118,230,255,.14), rgba(255,255,255,.02));
-      box-shadow: 0 14px 34px rgba(0,0,0,.38);
+      padding:10px 12px; border-radius:14px;
+      border:1px solid rgba(123,233,255,.34);
+      background: linear-gradient(180deg, rgba(123,233,255,.14), rgba(255,255,255,.02));
+      box-shadow: 0 14px 36px rgba(0,0,0,.36);
       white-space:nowrap;
     }
     .cta:hover{
-      border-color: rgba(133,255,184,.42);
-      background: linear-gradient(180deg, rgba(133,255,184,.16), rgba(255,255,255,.02));
+      border-color: rgba(134,255,188,.44);
+      background: linear-gradient(180deg, rgba(134,255,188,.16), rgba(255,255,255,.02));
     }
 
-    /* Hero */
-    .hero{ padding: 62px 0 34px; }
+    /* ---------- HERO (Institute / editorial) ---------- */
+    .hero{
+      padding: 66px 0 36px;
+      position:relative;
+    }
     .heroGrid{
       display:grid;
       grid-template-columns: 1.18fr .82fr;
@@ -121,94 +115,129 @@
     }
     .kicker{
       display:inline-flex; align-items:center; gap:10px;
-      padding: 8px 10px;
+      padding: 9px 11px;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.14);
+      border: 1px solid rgba(244,247,255,.14);
       background: rgba(255,255,255,.03);
       color: var(--muted);
       font-size:13px;
-      margin-bottom:14px;
+      margin-bottom: 14px;
     }
-    .dot{ width:8px; height:8px; border-radius:999px; background:var(--a1); box-shadow: 0 0 0 4px rgba(118,230,255,.12); }
-
+    .dot{
+      width:8px; height:8px; border-radius:999px;
+      background: var(--a1);
+      box-shadow: 0 0 0 4px rgba(123,233,255,.12);
+    }
     h1{
       margin:0 0 14px;
       font-family:var(--font2);
-      font-weight:650;
-      font-size: clamp(34px, 4.3vw, 58px);
-      line-height:1.05;
-      letter-spacing:.2px;
+      font-weight:720;
+      font-size: clamp(36px, 4.4vw, 62px);
+      line-height: 1.02;
+      letter-spacing: .2px;
     }
     .lead{
       margin:0 0 18px;
       color: var(--muted);
       font-size: 17px;
-      max-width: 65ch;
+      max-width: 66ch;
     }
-    .actions{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 16px; }
+    .actions{
+      display:flex; gap:12px; flex-wrap:wrap;
+      margin-top: 16px;
+    }
     .btn{
       display:inline-flex; align-items:center; gap:10px;
       padding: 12px 14px;
       border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.14);
+      border: 1px solid rgba(244,247,255,.14);
       background: rgba(255,255,255,.03);
     }
-    .btn:hover{ border-color: rgba(255,255,255,.26); background: rgba(255,255,255,.05); }
+    .btn:hover{ border-color: rgba(244,247,255,.26); background: rgba(255,255,255,.05); }
     .btn.primary{
-      border-color: rgba(118,230,255,.38);
-      background: linear-gradient(180deg, rgba(118,230,255,.16), rgba(255,255,255,.02));
+      border-color: rgba(123,233,255,.36);
+      background: linear-gradient(180deg, rgba(123,233,255,.16), rgba(255,255,255,.02));
     }
     .btn.primary:hover{
-      border-color: rgba(133,255,184,.46);
-      background: linear-gradient(180deg, rgba(133,255,184,.18), rgba(255,255,255,.02));
+      border-color: rgba(134,255,188,.46);
+      background: linear-gradient(180deg, rgba(134,255,188,.18), rgba(255,255,255,.02));
     }
 
-    .panel{
+    /* Right hero “cover” card (Back-to-Blue-ish, quiet, cinematic) */
+    .cover{
       border-radius: var(--r2);
-      border: 1px solid rgba(255,255,255,.14);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border: 1px solid rgba(244,247,255,.14);
       box-shadow: var(--shadow);
       overflow:hidden;
+      background: rgba(255,255,255,.02);
     }
-    .pad{ padding: 18px; }
-
-    .pillRow{
-      display:flex; flex-wrap:wrap; gap:10px;
-      margin-top: 10px;
+    .coverTop{
+      position:relative;
+      height: 280px;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.62)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
     }
-    .pill{
-      padding: 9px 10px;
+    .coverBadge{
+      position:absolute; left:14px; top:14px;
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 9px 11px;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      color: var(--muted);
-      font-size: 13px;
+      border: 1px solid rgba(244,247,255,.20);
+      background: rgba(0,0,0,.22);
+      backdrop-filter: blur(10px);
+      color: var(--ink);
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
     }
-
-    .metric{
-      display:flex; justify-content:space-between; align-items:baseline;
+    .coverBody{ padding: 16px 18px 18px; }
+    .coverBody h3{ margin:0 0 8px; font-size: 16px; letter-spacing:.2px; }
+    .coverBody p{ margin:0; color: var(--muted); font-size: 14px; }
+    .miniRow{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .mini{
       padding: 12px 12px;
       border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.10);
+      border: 1px solid rgba(244,247,255,.10);
       background: rgba(255,255,255,.03);
-      margin-top:10px;
     }
-    .metric b{ color: var(--muted); font-size:13px; font-weight:600; }
-    .metric span{ color: var(--text); font-size:13px; }
+    .mini b{ display:block; font-size: 12px; color: var(--muted2); letter-spacing:.12em; text-transform:uppercase; }
+    .mini span{ display:block; margin-top: 6px; font-size: 13px; color: var(--ink); }
 
-    /* Sections */
-    section{ padding: 52px 0; border-top: 1px solid var(--line); }
-    .head{ display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:flex-end; }
-    h2{ margin:0; font-family:var(--font2); font-size: 30px; line-height:1.15; }
-    .sub{ margin:6px 0 0; color: var(--muted); max-width: 72ch; font-size: 15px; }
+    /* ---------- SECTIONS ---------- */
+    section{ padding: 56px 0; border-top: 1px solid var(--line); }
+    .head{
+      display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:flex-end;
+    }
+    h2{
+      margin:0;
+      font-family:var(--font2);
+      font-size: 32px;
+      line-height:1.12;
+    }
+    .sub{
+      margin:6px 0 0;
+      color: var(--muted);
+      max-width: 78ch;
+      font-size: 15px;
+    }
 
+    /* Institute-style editorial tiles */
     .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
     .card{
       border-radius: var(--r1);
-      border: 1px solid rgba(255,255,255,.12);
+      border: 1px solid rgba(244,247,255,.12);
       background: rgba(255,255,255,.03);
       box-shadow: 0 18px 44px rgba(0,0,0,.22);
     }
+    .pad{ padding: 18px; }
     .eyebrow{
       display:inline-flex; align-items:center; gap:10px;
       color: var(--muted2);
@@ -227,26 +256,50 @@
     ul{ margin:0; padding-left: 18px; color: var(--muted); font-size:14px; }
     li{ margin: 8px 0; }
 
-    .two{ display:grid; grid-template-columns: 1.05fr .95fr; gap: 14px; margin-top: 18px; align-items:start; }
+    .two{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 14px;
+      margin-top: 18px;
+      align-items:start;
+    }
     .textblock{
       border-radius: var(--r2);
-      border: 1px solid rgba(255,255,255,.12);
+      border: 1px solid rgba(244,247,255,.12);
       background: rgba(255,255,255,.03);
       padding: 18px;
     }
     .textblock p{ margin:0 0 12px; color: var(--muted); font-size: 14px; }
     .textblock p:last-child{ margin-bottom:0; }
 
-    .quote{
-      border-radius: var(--r2);
-      border: 1px solid rgba(255,255,255,.12);
-      background:
-        radial-gradient(640px 260px at 18% 18%, rgba(118,230,255,.12), transparent 60%),
-        rgba(255,255,255,.02);
-      padding: 18px;
+    /* Publications list (looks like an institute) */
+    .pubs{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 14px;
     }
-    .quote p{ margin:0; font-family: var(--font2); font-size: 18px; line-height: 1.35; color: var(--text); }
-    .quote small{ display:block; margin-top: 10px; color: var(--muted2); }
+    .pub{
+      border-radius: 16px;
+      border: 1px solid rgba(244,247,255,.12);
+      background: rgba(255,255,255,.03);
+      padding: 14px 14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap: 12px;
+    }
+    .pub b{ display:block; font-size: 14px; }
+    .pub small{ display:block; margin-top: 6px; color: var(--muted2); font-size: 12px; }
+    .tag{
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid rgba(244,247,255,.14);
+      background: rgba(0,0,0,.18);
+      padding: 7px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
 
     /* Contact */
     .contactGrid{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
@@ -255,16 +308,15 @@
       width:100%;
       padding: 12px;
       border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.12);
+      border: 1px solid rgba(244,247,255,.12);
       background: rgba(0,0,0,.22);
-      color: var(--text);
+      color: var(--ink);
       outline: none;
       font-family: var(--font1);
       font-size: 14px;
     }
     textarea{ min-height: 130px; resize: vertical; }
-    input:focus, textarea:focus{ border-color: rgba(118,230,255,.55); box-shadow: 0 0 0 4px rgba(118,230,255,.12); }
-
+    input:focus, textarea:focus{ border-color: rgba(123,233,255,.55); box-shadow: 0 0 0 4px rgba(123,233,255,.12); }
     .formActions{ display:flex; gap: 10px; flex-wrap:wrap; align-items:center; margin-top: 12px; }
 
     footer{
@@ -275,18 +327,18 @@
     }
     .foot{ display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; align-items:center; }
 
+    /* Reveal */
+    .reveal{ opacity:0; transform: translateY(10px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.on{ opacity:1; transform: translateY(0); }
+
     /* Responsive */
-    @media (max-width: 930px){
+    @media (max-width: 960px){
       .heroGrid{ grid-template-columns: 1fr; }
-      .grid3{ grid-template-columns: 1fr; }
       .two{ grid-template-columns: 1fr; }
+      .grid3{ grid-template-columns: 1fr; }
       .contactGrid{ grid-template-columns: 1fr; }
       .brand{ min-width: unset; }
     }
-
-    /* soft reveal */
-    .reveal{ opacity:0; transform: translateY(10px); transition: opacity .7s ease, transform .7s ease; }
-    .reveal.on{ opacity:1; transform: translateY(0); }
   </style>
 </head>
 
@@ -297,16 +349,16 @@
       <div class="mark" aria-hidden="true"></div>
       <div class="bt">
         <b>Global Water Fund</b>
-        <span>Institute • Strategic Intelligence</span>
+        <span>Institute</span>
       </div>
     </a>
 
     <nav aria-label="Primary">
-      <a href="#work">What we do</a>
-      <a href="#outputs">Outputs</a>
-      <a href="#focus">Focus</a>
+      <a href="#mission">Mission</a>
+      <a href="#work">Work</a>
+      <a href="#publications">Publications</a>
+      <a href="#convenings">Convenings</a>
       <a href="#partners">Partners</a>
-      <a href="#about">Leadership</a>
       <a class="cta" href="#contact">Request a briefing →</a>
     </nav>
   </div>
@@ -316,44 +368,47 @@
   <div class="wrap">
     <div class="heroGrid">
       <div class="reveal">
-        <div class="kicker"><span class="dot"></span> Strategic intelligence for human and national security</div>
+        <div class="kicker"><span class="dot"></span> Strategic intelligence for human & national security</div>
 
         <h1>
-          Water security is the quiet variable behind
+          The Institute for
           <span style="background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip:text; background-clip:text; color:transparent;">
-            stability, prosperity, and power.
+            water security & stability.
           </span>
         </h1>
 
         <p class="lead">
-          Global Water Fund Institute translates water risk into decision-grade intelligence, discreet diplomacy,
-          and finance pathways—connecting universities, governments, and capital to act faster and smarter.
+          Global Water Fund Institute produces decision-grade analysis and discreet convenings at the intersection of water,
+          governance, and security—translating risk into strategy, and strategy into action.
         </p>
 
         <div class="actions">
-          <a class="btn primary" href="#contact">Request a briefing</a>
-          <a class="btn" href="#outputs">See outputs</a>
-          <a class="btn" href="#partners">Collaboration model</a>
+          <a class="btn primary" href="#publications">Explore publications</a>
+          <a class="btn" href="#convenings">Propose a convening</a>
+          <a class="btn" href="#contact">Contact</a>
         </div>
 
-        <div class="pillRow">
-          <span class="pill">Intelligence → Action</span>
-          <span class="pill">Diplomacy + Governance</span>
-          <span class="pill">Pipeline to Finance</span>
+        <div style="margin-top:16px; color: var(--muted2); font-size:13px;">
+          Based on an operating principle: <i>clarity, credibility, and quiet delivery</i>.
         </div>
       </div>
 
-      <aside class="panel reveal">
-        <div class="pad">
-          <div class="metric"><b>Available now</b><span>Briefings • notes • roundtables</span></div>
-          <div class="metric"><b>Building next</b><span>Essays • book • podcast</span></div>
-          <div class="metric"><b>Best fit</b><span>Gov • funds • universities</span></div>
-
-          <div style="height:12px"></div>
-
-          <div class="quote">
-            <p>“When the well is dry, we know the worth of water.”</p>
-            <small>— Benjamin Franklin (still undefeated)</small>
+      <aside class="cover reveal">
+        <div class="coverTop">
+          <div class="coverBadge">Institute briefings</div>
+        </div>
+        <div class="coverBody">
+          <h3>Current focus (2026)</h3>
+          <p>EU resilience, Eastern Mediterranean stability, MENA water-energy-food risk, and strategic infrastructure exposure.</p>
+          <div class="miniRow">
+            <div class="mini">
+              <b>Output</b>
+              <span>Monthly Brief + Executive Notes</span>
+            </div>
+            <div class="mini">
+              <b>Format</b>
+              <span>Briefings • Roundtables • Dossiers</span>
+            </div>
           </div>
         </div>
       </aside>
@@ -361,38 +416,74 @@
   </div>
 </main>
 
+<section id="mission">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>Mission</h2>
+        <p class="sub">Water is a strategic variable: it shapes legitimacy, migration pressures, food security, industrial continuity, and geopolitical risk.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="textblock reveal">
+        <p>
+          The Institute exists to make water risk legible to decision-makers — not as “environment,” but as a foundational component of
+          economic resilience and national stability.
+        </p>
+        <p>
+          We bridge three worlds that often speak past each other: <b style="color:var(--ink)">science</b>, <b style="color:var(--ink)">policy</b>, and <b style="color:var(--ink)">finance</b>.
+          Our work is built for action: concise, defensible, and directly usable in strategy rooms.
+        </p>
+        <p style="margin:0; color: var(--muted2); font-size:13px;">
+          (And yes, we keep it readable. National security is complicated enough.)
+        </p>
+      </div>
+
+      <div class="textblock reveal">
+        <p style="margin:0; font-family: var(--font2); font-size: 20px; line-height:1.35; color: var(--ink);">
+          “Water is not only a resource. It is a multiplier of risk — and a multiplier of peace.”
+        </p>
+        <p style="margin-top:10px; color: var(--muted2); font-size:13px;">
+          — Global Water Fund Institute (working doctrine)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="work">
   <div class="wrap">
     <div class="head">
       <div>
-        <h2>What we do</h2>
-        <p class="sub">Three pillars. One mission: water resilience that protects lives, economies, and stability.</p>
+        <h2>Institute work</h2>
+        <p class="sub">Designed like an institute: publish, convene, advise — then build investable pathways.</p>
       </div>
     </div>
 
     <div class="grid3">
       <div class="card reveal">
         <div class="pad">
-          <div class="eyebrow"><span class="bar"></span> Strategic intelligence</div>
-          <h3>Early warning + decision briefs</h3>
-          <p>Signals, scenarios, and risk framing for leaders—built to be acted on, not admired.</p>
+          <div class="eyebrow"><span class="bar"></span> Research & intelligence</div>
+          <h3>Decision-grade briefs</h3>
+          <p>Short, sharp products leaders can use immediately — without needing a 40-page thesis (unless they want one).</p>
           <ul>
-            <li>Monthly “Water Security Brief” (regional + thematic)</li>
-            <li>Scenario notes (stress, shocks, and second-order impacts)</li>
-            <li>Board / ministerial briefing decks</li>
+            <li>Regional risk briefs</li>
+            <li>Scenario notes & early-warning signals</li>
+            <li>Infrastructure & supply-chain exposure</li>
           </ul>
         </div>
       </div>
 
       <div class="card reveal">
         <div class="pad">
-          <div class="eyebrow"><span class="bar"></span> Diplomacy & convening</div>
-          <h3>Quiet rooms, serious outcomes</h3>
-          <p>Invite-only dialogues where policy, security, science, and finance can actually agree on next steps.</p>
+          <div class="eyebrow"><span class="bar"></span> Diplomacy & governance</div>
+          <h3>Quiet convening</h3>
+          <p>Invite-only dialogues under Chatham House Rule — policy, security, investment, academia.</p>
           <ul>
-            <li>Closed-door roundtables (Chatham House Rule)</li>
-            <li>Track 1.5 style dialogues</li>
-            <li>University + policy co-hosting model</li>
+            <li>Track 1.5 roundtables</li>
+            <li>EU & regional coordination sessions</li>
+            <li>Briefings for institutions</li>
           </ul>
         </div>
       </div>
@@ -400,12 +491,12 @@
       <div class="card reveal">
         <div class="pad">
           <div class="eyebrow"><span class="bar"></span> Finance pathways</div>
-          <h3>From risk → pipeline → capital</h3>
-          <p>Convert intelligence into investable programs and credible delivery frameworks.</p>
+          <h3>Pipeline to capital</h3>
+          <p>Turn analysis into fundable programs with credible governance and delivery structures.</p>
           <ul>
             <li>Investment-ready concept notes</li>
-            <li>Blended finance / PPP structuring support</li>
-            <li>Partner matchmaking (implementers + funders)</li>
+            <li>Blended finance / PPP support</li>
+            <li>Partner matchmaking</li>
           </ul>
         </div>
       </div>
@@ -413,72 +504,99 @@
   </div>
 </section>
 
-<section id="outputs">
+<section id="publications">
   <div class="wrap">
     <div class="head">
       <div>
-        <h2>Outputs</h2>
-        <p class="sub">Start small, publish consistently, build trust fast.</p>
+        <h2>Publications</h2>
+        <p class="sub">An institute is judged by what it publishes. Start consistent. Build trust. Scale impact.</p>
       </div>
     </div>
 
     <div class="two">
       <div class="textblock reveal">
-        <p><b style="color:var(--text);">1) Monthly Water Security Brief</b><br/>
-        A short, sharp synthesis of risks, opportunities, and actionable recommendations.</p>
-        <p><b style="color:var(--text);">2) Executive Briefings</b><br/>
-        30–60 minutes, tailored: government, sovereign funds, boards, security stakeholders.</p>
-        <p><b style="color:var(--text);">3) Roundtable Series</b><br/>
-        2–4 convenings per year with invited experts and decision-makers.</p>
-        <p style="margin:0; color:var(--muted2); font-size:13px;">
-          (This is where your book, essays, and podcast naturally plug in—once the platform is humming.)
+        <p><b style="color:var(--ink);">Featured series</b></p>
+        <div class="pubs">
+          <div class="pub">
+            <div>
+              <b>Water Security Brief (Monthly)</b>
+              <small>Signals • risks • recommendations — concise and board-ready.</small>
+            </div>
+            <div class="tag">Brief</div>
+          </div>
+
+          <div class="pub">
+            <div>
+              <b>Strategic Notes (Quarterly)</b>
+              <small>Deep dives on hotspots, governance, and second-order impacts.</small>
+            </div>
+            <div class="tag">Note</div>
+          </div>
+
+          <div class="pub">
+            <div>
+              <b>Investable Resilience Dossiers</b>
+              <small>From risk framing to pipeline concepts and finance pathways.</small>
+            </div>
+            <div class="tag">Dossier</div>
+          </div>
+        </div>
+
+        <p style="margin-top:14px; color: var(--muted2); font-size:13px;">
+          You can add PDFs later by linking them here (e.g., <code>/briefs/brief-001.pdf</code>).
         </p>
       </div>
 
-      <div class="quote reveal">
-        <p>Water is not “just environment.” It is supply chains, cities, food systems, ports, energy, and legitimacy.</p>
-        <small>Global Water Fund Institute — working definition</small>
+      <div class="textblock reveal">
+        <p><b style="color:var(--ink);">Coming soon</b></p>
+        <ul>
+          <li>Essays and op-eds (policy + public intelligence)</li>
+          <li>A book-length body of work on water scarcity and security</li>
+          <li>Podcast conversations (science × policy × capital)</li>
+        </ul>
+        <p style="margin-top:12px; color: var(--muted2); font-size:13px;">
+          Your website should look like the library is being built — even before everything is published.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="focus">
+<section id="convenings">
   <div class="wrap">
     <div class="head">
       <div>
-        <h2>Focus</h2>
-        <p class="sub">Where water risk becomes political risk — and where resilience becomes strategic advantage.</p>
+        <h2>Convenings</h2>
+        <p class="sub">A quiet room with the right people is sometimes more powerful than a loud conference with the wrong ones.</p>
       </div>
     </div>
 
-    <div class="grid3">
-      <div class="card reveal"><div class="pad">
-        <h3>Regions</h3>
-        <ul>
-          <li>Eastern Mediterranean & EU resilience</li>
-          <li>MENA water-energy-food nexus</li>
-          <li>Transatlantic security implications</li>
-        </ul>
-      </div></div>
+    <div class="two">
+      <div class="card reveal">
+        <div class="pad">
+          <div class="eyebrow"><span class="bar"></span> Convening series</div>
+          <h3>Water Security & Stability Roundtables</h3>
+          <p>Invite-only sessions designed to translate risk into coordinated action across policy, security, and finance.</p>
+          <ul>
+            <li>Chatham House Rule format</li>
+            <li>Institutional brief in advance</li>
+            <li>Follow-up action memo</li>
+          </ul>
+        </div>
+      </div>
 
-      <div class="card reveal"><div class="pad">
-        <h3>Systems</h3>
-        <ul>
-          <li>Ports, shipping & strategic infrastructure</li>
-          <li>Urban water stress & governance</li>
-          <li>Food systems + trade exposure</li>
-        </ul>
-      </div></div>
-
-      <div class="card reveal"><div class="pad">
-        <h3>Instruments</h3>
-        <ul>
-          <li>Blended finance + PPP structures</li>
-          <li>Risk analytics + scenario planning</li>
-          <li>Policy roadmaps + implementation pipelines</li>
-        </ul>
-      </div></div>
+      <div class="card reveal">
+        <div class="pad">
+          <div class="eyebrow"><span class="bar"></span> Briefings</div>
+          <h3>Executive briefings</h3>
+          <p>Tailored 30–60 minute briefings for institutions, funds, ministries, boards, and research partners.</p>
+          <ul>
+            <li>Regional risk outlook</li>
+            <li>Infrastructure exposure framing</li>
+            <li>Investment pathway recommendations</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -487,63 +605,34 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <h2>Partnership model</h2>
-        <p class="sub">Lightweight to join. Serious enough to matter.</p>
+        <h2>Partners</h2>
+        <p class="sub">We collaborate through co-hosted convenings, joint notes, and network-based introductions. Logos are used only with permission.</p>
       </div>
     </div>
 
     <div class="two">
       <div class="textblock reveal">
-        <p><b style="color:var(--text);">How partners engage</b></p>
+        <p><b style="color:var(--ink);">Collaboration model</b></p>
         <ul>
           <li>Co-host a roundtable or briefing session</li>
-          <li>Contribute expertise to a short note</li>
+          <li>Contribute expertise to a short publication</li>
           <li>Introduce one aligned institution or fund</li>
         </ul>
-        <p style="margin-top:12px;"><b style="color:var(--text);">Language discipline</b><br/>
+        <p style="margin-top:12px; color: var(--muted2); font-size:13px;">
           Until formal agreements exist, we use: <i>“in discussion with”</i> and <i>“exploring collaboration.”</i>
         </p>
       </div>
 
       <div class="textblock reveal">
-        <p><b style="color:var(--text);">Proposed nodes</b></p>
+        <p><b style="color:var(--ink);">Proposed nodes</b></p>
         <ul>
           <li><b>Princeton</b> — convening / diplomacy alignment</li>
           <li><b>Oxford</b> — governance framing + networks</li>
           <li><b>Athens</b> — policy translation + writing hub</li>
         </ul>
-        <p style="margin:12px 0 0; color:var(--muted2); font-size:13px;">
-          Logos will be added only with permission.
+        <p style="margin:12px 0 0; color: var(--muted2); font-size:13px;">
+          This is intentionally presented as a program architecture, not a claim of formal partnership.
         </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="wrap">
-    <div class="head">
-      <div>
-        <h2>Leadership</h2>
-        <p class="sub">A platform is only as credible as its clarity—and its follow-through.</p>
-      </div>
-    </div>
-
-    <div class="two">
-      <div class="textblock reveal">
-        <p>
-          <b style="color:var(--text);">Stella Thomas</b> is the Founder & Managing Director of Global Water Fund.
-          She works across water security, governance, and investment pathways—connecting high-level networks of
-          government, industry, and universities to accelerate real-world solutions.
-        </p>
-        <p style="margin:0; color:var(--muted2); font-size:13px;">
-          (We keep this section intentionally short. Your full bio can live as a downloadable PDF later.)
-        </p>
-      </div>
-
-      <div class="quote reveal">
-        <p>Strategy without delivery is theatre. Delivery without strategy is expensive chaos.</p>
-        <small>— the unofficial motto</small>
       </div>
     </div>
   </div>
@@ -553,21 +642,21 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <h2>Request a briefing</h2>
-        <p class="sub">If you’re building resilience policy, investment strategy, or security planning—this is the inbox.</p>
+        <h2>Contact</h2>
+        <p class="sub">Institutional inquiries, briefings, convenings, and research collaboration.</p>
       </div>
     </div>
 
     <div class="two">
       <div class="textblock reveal">
         <p>
-          <b style="color:var(--text);">Email</b><br/>
-          <a href="mailto:info@globalwaterfund.org" style="text-decoration:underline; text-decoration-color: rgba(255,255,255,.28);">
+          <b style="color:var(--ink);">Email</b><br/>
+          <a href="mailto:info@globalwaterfund.org" style="text-decoration:underline; text-decoration-color: rgba(244,247,255,.28);">
             info@globalwaterfund.org
           </a>
         </p>
-        <p style="margin:0; color:var(--muted2); font-size:13px;">
-          Typical requests: executive briefings, roundtable proposals, university collaboration, investment-aligned programs.
+        <p style="margin:0; color: var(--muted2); font-size:13px;">
+          If you want a short call, write “Briefing Request” in the subject line.
         </p>
       </div>
 
@@ -585,15 +674,15 @@
 
         <div style="margin-top:12px;">
           <label for="msg">Message</label>
-          <textarea id="msg" name="msg" placeholder="What do you need: a briefing, a roundtable, or a partnership discussion?" required></textarea>
+          <textarea id="msg" name="msg" placeholder="What do you need: a briefing, a convening proposal, or a research partnership?" required></textarea>
         </div>
 
         <div class="formActions">
           <button class="btn primary" type="submit">Email this request</button>
-          <a class="btn" href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20%E2%80%94%20Briefing%20Request">Open email</a>
+          <a class="btn" href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20%E2%80%94%20Inquiry">Open email</a>
         </div>
 
-        <p style="margin:10px 0 0; color:var(--muted2); font-size:12px;">
+        <p style="margin:10px 0 0; color: var(--muted2); font-size:12px;">
           This form opens your email client. No data is stored on the website.
         </p>
       </form>
@@ -603,11 +692,10 @@
 
 <footer>
   <div class="wrap foot">
-    <div>© <span id="year"></span> Global Water Fund. All rights reserved.</div>
+    <div>© <span id="year"></span> Global Water Fund Institute. All rights reserved.</div>
     <div style="display:flex; gap:10px; flex-wrap:wrap;">
-      <a href="#work">Work</a>
-      <a href="#outputs">Outputs</a>
-      <a href="#partners">Partners</a>
+      <a href="#publications">Publications</a>
+      <a href="#convenings">Convenings</a>
       <a href="#top">Top ↑</a>
     </div>
   </div>
@@ -629,7 +717,7 @@
     const email = document.getElementById("email").value.trim();
     const msg = document.getElementById("msg").value.trim();
 
-    const subject = encodeURIComponent("Global Water Fund — Briefing / Collaboration Request");
+    const subject = encodeURIComponent("Global Water Fund Institute — Inquiry");
     const body = encodeURIComponent(
 `Name: ${name}
 Email: ${email}
@@ -641,5 +729,6 @@ ${msg}`
     window.location.href = `mailto:info@globalwaterfund.org?subject=${subject}&body=${body}`;
   });
 </script>
+
 </body>
 </html>
