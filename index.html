@@ -12,99 +12,105 @@
 </head>
 <body>
 
-<header class="header">
+<header>
   <div class="wrap nav">
     <a class="brand" href="index.html" aria-label="Home">
-      <span class="wordmark">
-        <b>Global Water Fund</b>
-        <span>Institute</span>
-      </span>
+      <b>Global Water Fund</b>
+      <span>Institute</span>
     </a>
-
     <nav class="menu" aria-label="Primary">
-      <a href="#doctrine">Doctrine</a>
-      <a href="#work">Work</a>
-      <a href="#library">Library</a>
-      <a href="#about">About</a>
-      <a class="cta" href="#contact">Contact</a>
+      <a href="doctrine.html">Doctrine</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+      <a class="cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<main class="hero" id="top">
-  <video class="heroVideo" autoplay muted loop playsinline preload="metadata"
-         poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80">
-    <!-- Replace with your own MP4 later for perfect control -->
+<section class="hero" id="top" aria-label="Ocean hero">
+  <video autoplay muted loop playsinline preload="metadata"
+    poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80">
     <source src="https://cdn.coverr.co/videos/coverr-ocean-waves-1604/1080p.mp4" type="video/mp4">
   </video>
+  <div class="shade" aria-hidden="true"></div>
 
-  <!-- Clean overlay (NOT glass / not dirty) -->
-  <div class="heroShade" aria-hidden="true"></div>
+  <div class="wrap inner">
+    <div>
+      <div class="kicker">Geopolitical Water Futures Intelligence</div>
+      <h1>Global water intelligence.</h1>
+      <p class="lead">
+        Strategic Intelligence for Water &amp; Security — advancing human and national stability across oceans, earth systems,
+        and strategic infrastructure.
+      </p>
 
-  <div class="wrap heroInner">
-    <div class="kicker">Geopolitical Water Futures Intelligence</div>
+      <div class="actions">
+        <a class="btn primary" href="doctrine.html">Read the doctrine</a>
+        <a class="btn" href="library.html">Explore the library</a>
+      </div>
 
-    <h1>Water moves everything.</h1>
-
-    <p class="lead">
-      Strategic Intelligence for Water &amp; Security —
-      advancing human and national stability across oceans, earth systems, and strategic infrastructure.
-    </p>
-
-    <div class="actions">
-      <a class="btn primary" href="#doctrine">Read the doctrine</a>
-      <a class="btn" href="#library">Explore the library</a>
+      <div class="fine">Water Security for Human &amp; National Stability</div>
     </div>
-
-    <div class="fine">Water Security for Human &amp; National Stability</div>
   </div>
 
-  <div class="scroll" aria-hidden="true"></div>
-</main>
+  <div class="scrollCue" aria-hidden="true">
+    <div>Scroll</div>
+    <div class="line"></div>
+  </div>
+</section>
 
-<section class="section" id="doctrine">
+<section class="section" aria-label="About preview">
   <div class="wrap narrow">
-    <h2>Doctrine</h2>
+    <h2>About</h2>
     <p class="big">
-      Water is the hidden architecture of stability. When water systems fail,
-      legitimacy erodes long before institutions collapse.
+      An institute focused on the most underpriced variable in strategy: water.
     </p>
     <p>
-      The Global Water Fund Institute exists to make water visible to strategy:
-      translating hydrological disruption into geopolitical meaning — risk, leverage,
-      fragility, resilience — in language leaders can use.
-    </p>
-    <p class="em">
-      In the end, water is not only a resource. It is a test of governance.
+      The Global Water Fund Institute convenes and publishes at the intersection of water, governance and security —
+      translating complexity into decision-grade clarity for governments, investors, and institutional partners.
     </p>
   </div>
 </section>
 
-<section class="imageBand" aria-label="Ocean image band">
-  <div class="imageBandMedia"
-       style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80');">
-  </div>
-</section>
+<div class="band" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80');"></div>
 
-<section class="section" id="work">
-  <div class="wrap narrow">
-    <h2>Work</h2>
-    <p class="big">
-      Beautiful, usable outputs — built for action, not noise.
-    </p>
+<section class="section alt" aria-label="Featured and latest">
+  <div class="wrap">
+    <h2>Featured</h2>
+    <p class="big">Editorial work designed to move decisions — not just opinions.</p>
 
-    <div class="minimalList">
-      <div class="item">
-        <b>Strategic Briefs</b>
-        <span>Concise, decision-grade analysis linking water stress to security, governance, and economic consequence.</span>
+    <div class="grid">
+      <div class="feature">
+        <a class="featureCard" href="doctrine.html">
+          <div class="featureMedia" style="background-image:url('https://images.unsplash.com/photo-1484291470158-b8f8d608850d?auto=format&fit=crop&w=2400&q=80');"></div>
+          <div class="featureBody">
+            <div class="meta">Doctrine</div>
+            <h3>Water is the hidden architecture of stability.</h3>
+            <p>
+              When water systems fail, legitimacy erodes long before institutions collapse. Our doctrine makes water visible to strategy.
+            </p>
+          </div>
+        </a>
       </div>
-      <div class="item">
-        <b>Futures Intelligence</b>
-        <span>Signals, scenarios, and second-order impacts across infrastructure, migration pressure, trade, and stability.</span>
-      </div>
-      <div class="item">
-        <b>Convenings</b>
-        <span>Invite-only dialogues designed to produce alignment, not applause — with follow-through.</span>
+
+      <div class="latest" aria-label="Latest">
+        <div class="meta" style="margin-bottom:10px;">Latest</div>
+
+        <a href="library.html">
+          <div><b>Water Security Brief</b></div>
+          <span>Monthly</span>
+        </a>
+        <a href="library.html">
+          <div><b>Strategic Notes</b></div>
+          <span>Quarterly</span>
+        </a>
+        <a href="library.html">
+          <div><b>Resilience Dossiers</b></div>
+          <span>As needed</span>
+        </a>
+        <a href="contact.html">
+          <div><b>Request a briefing</b></div>
+          <span>Contact</span>
+        </a>
       </div>
     </div>
   </div>
@@ -112,82 +118,39 @@
 
 <section class="quoteBand" aria-label="Quote">
   <div class="wrap narrow">
-    <p class="quote">
-      “We forget that the water cycle and the life cycle are one.”
-    </p>
+    <p class="quote">“We forget that the water cycle and the life cycle are one.”</p>
     <div class="cite">Jacques Cousteau</div>
   </div>
 </section>
 
-<section class="section" id="library">
+<div class="band video" aria-label="Ocean band video">
+  <video autoplay muted loop playsinline preload="metadata"
+    poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80">
+    <source src="https://cdn.coverr.co/videos/coverr-waves-crashing-on-a-rocky-shore-4012/1080p.mp4" type="video/mp4">
+  </video>
+  <div class="shade" aria-hidden="true"></div>
+</div>
+
+<section class="section" aria-label="Contact">
   <div class="wrap narrow">
-    <h2>Library</h2>
-    <p class="big">
-      A living body of work — briefs, notes, dossiers, and doctrine.
-    </p>
-
-    <div class="library">
-      <a class="libRow" href="#" onclick="return false;">
-        <span class="libTitle">Water Security Brief</span>
-        <span class="libMeta">Monthly</span>
-      </a>
-      <a class="libRow" href="#" onclick="return false;">
-        <span class="libTitle">Strategic Notes</span>
-        <span class="libMeta">Quarterly</span>
-      </a>
-      <a class="libRow" href="#" onclick="return false;">
-        <span class="libTitle">Resilience Dossiers</span>
-        <span class="libMeta">As needed</span>
-      </a>
-
-      <p class="hint">
-        (When you’re ready, we’ll add PDF links here — clean, like a real institute library.)
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="imageBand" aria-label="Earth systems image band">
-  <div class="imageBandMedia"
-       style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80');">
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap narrow">
-    <h2>About</h2>
-    <p class="big">
-      A Zurich-based institute with a global network across policy, finance, and academia.
-    </p>
-    <p>
-      Led by Stella Thomas, the Institute convenes and publishes at the intersection of water, governance,
-      and security — building partnerships that strengthen stability and resilience.
-    </p>
-  </div>
-</section>
-
-<section class="section contact" id="contact">
-  <div class="wrap narrow">
-    <h2>Contact</h2>
+    <h2>Engage</h2>
     <p class="big">Institutional inquiries, partnerships, briefings, and convenings.</p>
-
-    <div class="contactLine">
-      <a class="email" href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20—%20Briefing%20Request">
+    <p>
+      Email: <a href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20—%20Briefing%20Request" style="text-decoration:underline; text-decoration-color:rgba(26,134,255,.35);">
         info@globalwaterfund.org
       </a>
-      <span class="dotSep">•</span>
-      <a class="smallLink" href="#top">Back to top</a>
-    </div>
+    </p>
   </div>
 </section>
 
-<footer class="footer">
+<footer>
   <div class="wrap foot">
     <div>© <span id="year"></span> Global Water Fund Institute</div>
-    <div class="footLinks">
-      <a href="#doctrine">Doctrine</a>
-      <a href="#library">Library</a>
-      <a href="mailto:info@globalwaterfund.org">Email</a>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="doctrine.html">Doctrine</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
