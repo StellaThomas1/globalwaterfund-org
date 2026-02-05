@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Global Water Fund — Systems Map</title>
+  <link rel="stylesheet" href="assets/site.css"/>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="wrap row">
+    <div class="brand">
+      <b>GLOBAL WATER FUND</b>
+      <span>Earth / Map</span>
+    </div>
+    <button class="menuBtn" id="openMenu" type="button">
+      <span class="menuDot"></span> MENU
+    </button>
+  </div>
+</div>
+
+<!-- Menu overlay -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap inner">
+    <div class="closeRow">
+      <button class="closeBtn" id="closeMenu" type="button">CLOSE</button>
+    </div>
+    <div class="navGrid">
+      <a href="./map.html"><span>Map</span><small>Systems</small></a>
+      <a href="./planetary.html"><span>Planetary</span><small>Stability</small></a>
+      <a href="../index.html"><span>Earth</span><small>Home</small></a>
+      <a href="#" onclick="return false;"><span>Capabilities</span><small>Coming</small></a>
+      <a href="#" onclick="return false;"><span>Foresight</span><small>Coming</small></a>
+      <a href="#" onclick="return false;"><span>Maritime</span><small>Coming</small></a>
+      <a href="#" onclick="return false;"><span>Capital</span><small>Coming</small></a>
+      <a href="mailto:info@globalwaterfund.org"><span>Contact</span><small>Email</small></a>
+    </div>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap hcopy">
+    <div class="kicker">
+      <span class="chip">BASINS</span>
+      <span class="chip">NETWORKS</span>
+      <span class="chip">CASCADING RISKS</span>
+      <span class="chip">EARLY WARNING</span>
+      <span class="chip">ECOSYSTEMS</span>
+      <span class="chip">HUMAN SECURITY</span>
+    </div>
+
+    <h1>WATER IS EARTH’S OPERATING SYSTEM</h1>
+
+    <p class="lead">
+      We translate basin stress and cross-border dependencies into decision-ready risk signals for governments, investors, and operators.
+    </p>
+
+    <div class="subline">
+      GLOBAL OPERATING PICTURE — WATER, FOOD, ENERGY, HEALTH, MARITIME, MIGRATION, SECURITY, ECONOMY
+    </div>
+  </div>
+
+  <div class="globePanel">
+    <div id="globe"></div>
+    <div class="globeFade"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="h2">Systems Map</div>
+    <p class="p">
+      A live global operating picture: basins, corridors, chokepoints, and dependencies — where water stress propagates across
+      supply chains, food systems, energy reliability, and political stability.
+    </p>
+    <p class="p">
+      Replace the placeholder points/arcs in <span style="color:rgba(33,212,255,.9)">earth/assets/site.js</span>
+      with your real nodes (countries, basins, infrastructure, partners).
+    </p>
+    <div class="quote">From basin intelligence to strategy — before the shock.</div>
+    <div class="smallcaps">Global Water Fund Institute</div>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="wrap row">
+    <div>© <span id="year"></span> Global Water Fund</div>
+    <div>
+      <a href="./planetary.html">Planetary</a> ·
+      <a href="mailto:info@globalwaterfund.org">info@globalwaterfund.org</a>
+    </div>
+  </div>
+</div>
+
+<!-- Globe.gl (CDN) -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://unpkg.com/globe.gl@2.33.1/dist/globe.gl.min.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
