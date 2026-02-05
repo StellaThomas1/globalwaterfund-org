@@ -4,157 +4,241 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Global Water Fund Institute</title>
-  <meta name="description" content="Global Water Fund Institute — Geopolitical Water Futures Intelligence."/>
+  <meta name="description" content="Geopolitical Water Futures Intelligence — Strategic Intelligence for Water & Security."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Fraunces:opsz,wght@9..144,350..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Fraunces:opsz,wght@9..144,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css"/>
 </head>
+
 <body>
+  <header class="hdr">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="b1">Global Water Fund</span>
+        <span class="b2">Institute</span>
+      </a>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="Home">
-      <b>Global Water Fund</b>
-      <span>Institute</span>
-    </a>
-    <nav class="menu" aria-label="Primary">
-      <a href="doctrine.html">Doctrine</a>
-      <a href="library.html">Library</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="menu" aria-label="Primary">
+        <a href="#doctrine">Doctrine</a>
+        <a href="#work">Work</a>
+        <a href="#library">Library</a>
+        <a href="#about">About</a>
+        <a class="pill" href="#contact">Request a briefing</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero" id="top" aria-label="Ocean hero">
-  <video autoplay muted loop playsinline preload="metadata"
-    poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80">
-    <source src="https://cdn.coverr.co/videos/coverr-ocean-waves-1604/1080p.mp4" type="video/mp4">
-  </video>
-  <div class="shade" aria-hidden="true"></div>
+  <main id="top" class="hero">
+    <!-- Background video (replace later with your own mp4 in /assets/hero.mp4) -->
+    <video class="heroVid" autoplay muted loop playsinline preload="metadata"
+      poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80">
+      <source src="https://cdn.coverr.co/videos/coverr-ocean-waves-1604/1080p.mp4" type="video/mp4">
+    </video>
 
-  <div class="wrap inner">
-    <div>
-      <div class="kicker">Geopolitical Water Futures Intelligence</div>
-      <h1>Global water intelligence.</h1>
-      <p class="lead">
-        Strategic Intelligence for Water &amp; Security — advancing human and national stability across oceans, earth systems,
-        and strategic infrastructure.
+    <!-- Clean cinematic shade (not glassy/dirty) -->
+    <div class="shade" aria-hidden="true"></div>
+
+    <!-- Davos signal: spinning globe -->
+    <div class="globeWrap" aria-hidden="true">
+      <canvas id="globe"></canvas>
+      <div class="globeRings"></div>
+      <div class="globeLabel">Earth systems • security • governance</div>
+    </div>
+
+    <!-- Minimal kinetic type -->
+    <div class="wrap heroInner">
+      <div class="kicker reveal">
+        <span class="dot"></span>
+        Geopolitical Water Futures Intelligence
+      </div>
+
+      <h1 class="reveal">
+        Global water intelligence<br/>
+        for a destabilizing century.
+      </h1>
+
+      <p class="lead reveal">
+        Strategic Intelligence for Water &amp; Security — advancing human and national stability across oceans,
+        earth systems, and strategic infrastructure.
       </p>
 
-      <div class="actions">
-        <a class="btn primary" href="doctrine.html">Read the doctrine</a>
-        <a class="btn" href="library.html">Explore the library</a>
+      <div class="ctaRow reveal">
+        <a class="btn primary magnetic" href="#contact">Engage the Institute</a>
+        <a class="btn ghost" href="#library">Explore the Library</a>
       </div>
 
-      <div class="fine">Water Security for Human &amp; National Stability</div>
+      <div class="micro reveal">
+        Water Security for Human &amp; National Stability
+      </div>
     </div>
-  </div>
 
-  <div class="scrollCue" aria-hidden="true">
-    <div>Scroll</div>
-    <div class="line"></div>
-  </div>
-</section>
+    <!-- Animated waterline -->
+    <div class="waterline" aria-hidden="true">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+        <path id="wavePath" d=""></path>
+      </svg>
+    </div>
 
-<section class="section" aria-label="About preview">
-  <div class="wrap narrow">
-    <h2>About</h2>
-    <p class="big">
-      An institute focused on the most underpriced variable in strategy: water.
-    </p>
-    <p>
-      The Global Water Fund Institute convenes and publishes at the intersection of water, governance and security —
-      translating complexity into decision-grade clarity for governments, investors, and institutional partners.
-    </p>
-  </div>
-</section>
+    <div class="scrollCue" aria-hidden="true">
+      <span>Scroll</span>
+      <i></i>
+    </div>
+  </main>
 
-<div class="band" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80');"></div>
+  <section id="doctrine" class="sec">
+    <div class="wrap narrow">
+      <div class="eyebrow reveal">Doctrine</div>
+      <h2 class="reveal">Water is strategic infrastructure.</h2>
+      <p class="big reveal">
+        When water systems fail, legitimacy erodes long before institutions collapse.
+        The Institute exists to make water visible to strategy — translating hydrological disruption into geopolitical meaning:
+        risk, leverage, fragility, resilience.
+      </p>
+      <p class="reveal">
+        We publish briefs, scenarios, and intelligence designed for decision-makers — not for applause, not for noise.
+      </p>
+      <p class="sig reveal">In the end, water is not only a resource. It is a test of governance.</p>
+    </div>
+  </section>
 
-<section class="section alt" aria-label="Featured and latest">
-  <div class="wrap">
-    <h2>Featured</h2>
-    <p class="big">Editorial work designed to move decisions — not just opinions.</p>
+  <section class="band bandA" aria-label="Ocean band"></section>
 
-    <div class="grid">
-      <div class="feature">
-        <a class="featureCard" href="doctrine.html">
-          <div class="featureMedia" style="background-image:url('https://images.unsplash.com/photo-1484291470158-b8f8d608850d?auto=format&fit=crop&w=2400&q=80');"></div>
-          <div class="featureBody">
-            <div class="meta">Doctrine</div>
-            <h3>Water is the hidden architecture of stability.</h3>
-            <p>
-              When water systems fail, legitimacy erodes long before institutions collapse. Our doctrine makes water visible to strategy.
-            </p>
+  <section id="work" class="sec alt">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="eyebrow reveal">What we do</div>
+          <h2 class="reveal">Publish. Convene. Align.</h2>
+          <p class="big reveal">
+            A Davos-level institute is not a “services page.” It is a signal: clarity, credibility, and outcomes.
+          </p>
+        </div>
+
+        <div class="stack">
+          <div class="lineItem reveal">
+            <b>Strategic Briefs</b>
+            <span>Decision-grade analysis linking water stress to security, governance and economic consequence.</span>
           </div>
+          <div class="lineItem reveal">
+            <b>Futures Intelligence</b>
+            <span>Signals + scenarios: second-order impacts across infrastructure, migration pressure, trade and stability.</span>
+          </div>
+          <div class="lineItem reveal">
+            <b>Convenings</b>
+            <span>Invite-only dialogues built for alignment and follow-through (pre-read + action memo).</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap narrow">
+      <p class="q reveal">“We forget that the water cycle and the life cycle are one.”</p>
+      <div class="c reveal">Jacques Cousteau</div>
+    </div>
+  </section>
+
+  <section id="library" class="sec">
+    <div class="wrap">
+      <div class="eyebrow reveal">Library</div>
+      <div class="featureGrid">
+        <a class="feature reveal" href="#contact" onclick="return false;">
+          <div class="meta">Featured</div>
+          <h3>The Water Security Brief</h3>
+          <p>
+            Monthly: signals, hotspots, governance risk, infrastructure vulnerability — concise and board-ready.
+          </p>
+          <div class="arrow">→</div>
         </a>
+
+        <div class="latest">
+          <a class="row reveal" href="#contact" onclick="return false;">
+            <div>
+              <b>Strategic Notes</b>
+              <span>Quarterly</span>
+            </div>
+            <i>→</i>
+          </a>
+          <a class="row reveal" href="#contact" onclick="return false;">
+            <div>
+              <b>Resilience Dossiers</b>
+              <span>As needed</span>
+            </div>
+            <i>→</i>
+          </a>
+          <a class="row reveal" href="#contact" onclick="return false;">
+            <div>
+              <b>Convening Summaries</b>
+              <span>Invite-only</span>
+            </div>
+            <i>→</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band bandB" aria-label="Earth systems band"></section>
+
+  <section id="about" class="sec alt">
+    <div class="wrap narrow">
+      <div class="eyebrow reveal">About</div>
+      <h2 class="reveal">A serious institute needs gravity.</h2>
+      <p class="big reveal">
+        The Global Water Fund Institute convenes and publishes at the intersection of water, governance, and security —
+        built for institutional partners across policy, finance, and academia.
+      </p>
+      <p class="reveal">
+        Led by Stella Thomas. Based in Europe. Global in scope. Built for outcomes.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="sec contact">
+    <div class="wrap narrow">
+      <div class="eyebrow reveal">Contact</div>
+      <h2 class="reveal">Engage the Institute.</h2>
+      <p class="big reveal">
+        Briefings • partnerships • convenings • institutional collaboration.
+      </p>
+
+      <div class="contactRow reveal">
+        <a class="mail" href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20—%20Briefing%20Request">
+          info@globalwaterfund.org
+        </a>
+        <span class="sep">•</span>
+        <span class="hint">Suggested subject: “Briefing Request”</span>
       </div>
 
-      <div class="latest" aria-label="Latest">
-        <div class="meta" style="margin-bottom:10px;">Latest</div>
-
-        <a href="library.html">
-          <div><b>Water Security Brief</b></div>
-          <span>Monthly</span>
+      <div class="ctaRow reveal">
+        <a class="btn primary magnetic"
+           href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20—%20Briefing%20Request">
+          Request a briefing
         </a>
-        <a href="library.html">
-          <div><b>Strategic Notes</b></div>
-          <span>Quarterly</span>
-        </a>
-        <a href="library.html">
-          <div><b>Resilience Dossiers</b></div>
-          <span>As needed</span>
-        </a>
-        <a href="contact.html">
-          <div><b>Request a briefing</b></div>
-          <span>Contact</span>
+        <a class="btn ghost magnetic"
+           href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20—%20Partnership%20Discussion">
+          Partnership discussion
         </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="quoteBand" aria-label="Quote">
-  <div class="wrap narrow">
-    <p class="quote">“We forget that the water cycle and the life cycle are one.”</p>
-    <div class="cite">Jacques Cousteau</div>
-  </div>
-</section>
-
-<div class="band video" aria-label="Ocean band video">
-  <video autoplay muted loop playsinline preload="metadata"
-    poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2400&q=80">
-    <source src="https://cdn.coverr.co/videos/coverr-waves-crashing-on-a-rocky-shore-4012/1080p.mp4" type="video/mp4">
-  </video>
-  <div class="shade" aria-hidden="true"></div>
-</div>
-
-<section class="section" aria-label="Contact">
-  <div class="wrap narrow">
-    <h2>Engage</h2>
-    <p class="big">Institutional inquiries, partnerships, briefings, and convenings.</p>
-    <p>
-      Email: <a href="mailto:info@globalwaterfund.org?subject=Global%20Water%20Fund%20Institute%20—%20Briefing%20Request" style="text-decoration:underline; text-decoration-color:rgba(26,134,255,.35);">
-        info@globalwaterfund.org
-      </a>
-    </p>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap foot">
-    <div>© <span id="year"></span> Global Water Fund Institute</div>
-    <div style="display:flex; gap:12px; flex-wrap:wrap;">
-      <a href="doctrine.html">Doctrine</a>
-      <a href="library.html">Library</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+  <footer class="ftr">
+    <div class="wrap foot">
+      <div>© <span id="year"></span> Global Water Fund Institute</div>
+      <div class="footLinks">
+        <a href="#top">Top</a>
+        <a href="#doctrine">Doctrine</a>
+        <a href="#library">Library</a>
+        <a href="mailto:info@globalwaterfund.org">Email</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="assets/main.js"></script>
+  <!-- three.js for globe -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
