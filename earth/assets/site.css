@@ -1,0 +1,259 @@
+:root{
+  --bg0:#020b18;
+  --bg1:#031126;
+  --bg2:#041a36;
+  --ink:#eaf4ff;
+  --muted:rgba(234,244,255,.74);
+  --muted2:rgba(234,244,255,.56);
+  --line:rgba(234,244,255,.10);
+
+  --aqua:#21D4FF;
+  --blue:#1A86FF;
+  --glow:rgba(33,212,255,.22);
+
+  --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, Roboto, Arial, sans-serif;
+
+  --max: 1160px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(1400px 900px at 20% 0%, rgba(33,212,255,.10), transparent 55%),
+    radial-gradient(1200px 800px at 80% 10%, rgba(26,134,255,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg1), var(--bg0));
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+a{color:inherit; text-decoration:none}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 22px}
+
+/* Top bar */
+.topbar{
+  position:fixed; inset:0 0 auto 0;
+  z-index:50;
+  background: rgba(2,11,24,.55);
+  backdrop-filter: blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .row{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:16px;
+  padding: 14px 0;
+}
+.brand{
+  display:flex; flex-direction:column; line-height:1.05;
+}
+.brand b{
+  font-family:var(--serif);
+  font-weight:700;
+  letter-spacing:.2px;
+  font-size:16px;
+}
+.brand span{
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted2);
+}
+
+.menuBtn{
+  display:inline-flex; align-items:center; gap:10px;
+  border:1px solid rgba(234,244,255,.16);
+  background: rgba(234,244,255,.06);
+  padding: 10px 12px;
+  border-radius:999px;
+  color:rgba(234,244,255,.90);
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.menuBtn:hover{
+  border-color: rgba(33,212,255,.40);
+  background: rgba(33,212,255,.10);
+}
+.menuDot{
+  width:8px; height:8px; border-radius:999px;
+  background: rgba(33,212,255,.95);
+  box-shadow:0 0 0 6px rgba(33,212,255,.14);
+}
+
+/* Fullscreen menu overlay */
+.overlay{
+  position:fixed; inset:0;
+  z-index:80;
+  background:
+    radial-gradient(1200px 800px at 25% 10%, rgba(33,212,255,.14), transparent 58%),
+    radial-gradient(1100px 700px at 75% 18%, rgba(26,134,255,.12), transparent 62%),
+    rgba(2,11,24,.92);
+  backdrop-filter: blur(18px);
+  display:none;
+}
+.overlay.open{display:block}
+.overlay .inner{
+  padding-top: 92px;
+}
+.navGrid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 18px;
+  border-top:1px solid rgba(234,244,255,.12);
+}
+.navGrid a{
+  padding: 14px 0;
+  border-bottom:1px solid rgba(234,244,255,.12);
+  display:flex; justify-content:space-between; align-items:center;
+  font-family: var(--serif);
+  font-size: 22px;
+}
+.navGrid a small{
+  font-family:var(--sans);
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted2);
+}
+.closeRow{
+  display:flex; justify-content:flex-end;
+  margin-top: 10px;
+}
+.closeBtn{
+  border:1px solid rgba(234,244,255,.16);
+  background: rgba(234,244,255,.06);
+  padding: 10px 12px;
+  border-radius:999px;
+  color:rgba(234,244,255,.90);
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.closeBtn:hover{border-color: rgba(33,212,255,.40); background: rgba(33,212,255,.10);}
+
+/* Hero layout */
+.hero{
+  min-height: 100vh;
+  position:relative;
+  padding-top: 86px; /* topbar clearance */
+  display:grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 28px;
+  align-items:end;
+}
+@media (max-width: 980px){
+  .hero{grid-template-columns: 1fr; align-items:start; padding-bottom: 34px;}
+}
+
+.hcopy{
+  padding: 76px 0 64px;
+}
+.kicker{
+  display:flex; flex-wrap:wrap; gap:10px;
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color: rgba(234,244,255,.72);
+}
+.kicker .chip{
+  padding: 6px 10px;
+  border:1px solid rgba(234,244,255,.12);
+  border-radius:999px;
+  background: rgba(234,244,255,.04);
+}
+h1{
+  margin: 18px 0 14px;
+  font-family: var(--serif);
+  font-weight: 720;
+  font-size: clamp(42px, 4.8vw, 78px);
+  line-height: 1.02;
+  letter-spacing:.2px;
+}
+.lead{
+  margin:0;
+  color: rgba(234,244,255,.78);
+  max-width: 72ch;
+  font-size: 16px;
+}
+.subline{
+  margin-top: 16px;
+  color: rgba(234,244,255,.56);
+  font-size: 12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+/* Globe panel */
+.globePanel{
+  position:relative;
+  height: min(560px, 70vh);
+  border-left: 1px solid rgba(234,244,255,.10);
+}
+@media (max-width: 980px){
+  .globePanel{border-left:0; border-top:1px solid rgba(234,244,255,.10); height:min(520px, 60vh);}
+}
+#globe{
+  position:absolute; inset:0;
+}
+.globeFade{
+  position:absolute; inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(700px 420px at 50% 45%, rgba(33,212,255,.10), transparent 60%),
+    linear-gradient(180deg, rgba(2,11,24,.10), rgba(2,11,24,.66));
+}
+
+/* Section blocks (still dark, no white) */
+.section{
+  padding: 76px 0;
+  border-top:1px solid rgba(234,244,255,.10);
+  background:
+    radial-gradient(1200px 700px at 20% 0%, rgba(33,212,255,.08), transparent 60%),
+    linear-gradient(180deg, rgba(3,17,38,.0), rgba(3,17,38,.24));
+}
+.h2{
+  font-family:var(--serif);
+  font-size: 34px;
+  margin:0 0 12px;
+}
+.p{
+  margin:0 0 12px;
+  color: rgba(234,244,255,.74);
+  max-width: 86ch;
+}
+.quote{
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top:1px solid rgba(234,244,255,.10);
+  font-family:var(--serif);
+  font-size: 18px;
+  color: rgba(234,244,255,.92);
+}
+.smallcaps{
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color: rgba(234,244,255,.56);
+}
+
+/* Footer */
+.footer{
+  padding: 22px 0 40px;
+  border-top:1px solid rgba(234,244,255,.10);
+  color: rgba(234,244,255,.56);
+  font-size: 12px;
+  letter-spacing:.08em;
+}
+.footer .row{
+  display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;
+}
+.footer a:hover{text-decoration:underline}
